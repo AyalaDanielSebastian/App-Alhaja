@@ -1,8 +1,0 @@
-com.example.stockpro.app-pngs-0 C:\Users\dania\Downloads\Stock pro\Stockpro\app\build\generated\res\pngs\debug
-com.example.stockpro.app-updated_navigation_xml-1 C:\Users\dania\Downloads\Stock pro\Stockpro\app\build\generated\updated_navigation_xml\debug
-com.example.stockpro.app-packageDebugResources-2 C:\Users\dania\Downloads\Stock pro\Stockpro\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.stockpro.app-packageDebugResources-3 C:\Users\dania\Downloads\Stock pro\Stockpro\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.stockpro.app-debug-4 C:\Users\dania\Downloads\Stock pro\Stockpro\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.stockpro.app-debug-5 C:\Users\dania\Downloads\Stock pro\Stockpro\app\src\debug\res
-com.example.stockpro.app-main-6 C:\Users\dania\Downloads\Stock pro\Stockpro\app\src\main\res
-gradleHome-0 C:\Users\dania\.gradle

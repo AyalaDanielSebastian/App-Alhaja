@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="700" viewBox="0 0 1040 700" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#684274"/>
+    </marker>
+  </defs>
+
+  <rect width="1040" height="700" fill="#FFFFFF"/>
+
+  <text x="520" y="36" text-anchor="middle" font-size="23" font-weight="bold" fill="#3B2447">Alhaja · Arquitectura en capas (MVVM + Repositorio)</text>
+
+  <!-- Capa UI -->
+  <rect x="30" y="58" width="980" height="92" rx="12" fill="#F3ECF7" stroke="#684274" stroke-width="1.5"/>
+  <text x="46" y="80" font-size="14" font-weight="bold" fill="#684274">UI · Jetpack Compose + Navigation</text>
+  <rect x="46" y="92" width="183" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="137" y="119" text-anchor="middle" font-size="14" fill="#3B2447">Catálogo</text>
+  <rect x="241" y="92" width="183" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="332" y="119" text-anchor="middle" font-size="14" fill="#3B2447">Detalle</text>
+  <rect x="436" y="92" width="183" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="527" y="119" text-anchor="middle" font-size="14" fill="#3B2447">Favoritas</text>
+  <rect x="631" y="92" width="183" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="722" y="119" text-anchor="middle" font-size="14" fill="#3B2447">Lugares</text>
+  <rect x="826" y="92" width="183" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="917" y="119" text-anchor="middle" font-size="14" fill="#3B2447">Ajustes</text>
+
+  <line x1="520" y1="150" x2="520" y2="172" stroke="#684274" stroke-width="2" marker-end="url(#flecha)"/>
+  <text x="536" y="166" font-size="12" fill="#6B5A75">observa StateFlow</text>
+
+  <!-- Capa ViewModel -->
+  <rect x="30" y="176" width="980" height="80" rx="12" fill="#EDE3F3" stroke="#684274" stroke-width="1.5"/>
+  <text x="46" y="198" font-size="14" font-weight="bold" fill="#684274">ViewModel · AlhajaViewModel</text>
+  <rect x="46" y="208" width="963" height="38" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="527" y="232" text-anchor="middle" font-size="14" fill="#3B2447">StateFlow · viewModelScope.launch · funciones suspend</text>
+
+  <line x1="520" y1="256" x2="520" y2="278" stroke="#684274" stroke-width="2" marker-end="url(#flecha)"/>
+  <text x="536" y="272" font-size="12" fill="#6B5A75">depende solo de interfaces</text>
+
+  <!-- Capa Domain -->
+  <rect x="30" y="282" width="980" height="92" rx="12" fill="#FAF3E2" stroke="#8A6A1E" stroke-width="1.5"/>
+  <text x="46" y="304" font-size="14" font-weight="bold" fill="#8A6A1E">Domain · modelos e interfaces de repositorio</text>
+  <rect x="46" y="316" width="313" height="44" rx="8" fill="#FFFFFF" stroke="#8A6A1E"/>
+  <text x="202" y="343" text-anchor="middle" font-size="14" fill="#4A3A12">JoyasRepository</text>
+  <rect x="371" y="316" width="313" height="44" rx="8" fill="#FFFFFF" stroke="#8A6A1E"/>
+  <text x="527" y="343" text-anchor="middle" font-size="14" fill="#4A3A12">LugaresRepository</text>
+  <rect x="696" y="316" width="313" height="44" rx="8" fill="#FFFFFF" stroke="#8A6A1E"/>
+  <text x="852" y="343" text-anchor="middle" font-size="14" fill="#4A3A12">PreferenciasRepository</text>
+
+  <line x1="520" y1="374" x2="520" y2="396" stroke="#684274" stroke-width="2" marker-end="url(#flecha)"/>
+  <text x="536" y="390" font-size="12" fill="#6B5A75">implementado por</text>
+
+  <!-- Capa Data -->
+  <rect x="30" y="400" width="980" height="92" rx="12" fill="#F3ECF7" stroke="#684274" stroke-width="1.5"/>
+  <text x="46" y="422" font-size="14" font-weight="bold" fill="#684274">Data · implementaciones (Repository)</text>
+  <rect x="46" y="434" width="313" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="202" y="461" text-anchor="middle" font-size="14" fill="#3B2447">JoyasRepositoryImpl</text>
+  <rect x="371" y="434" width="313" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="527" y="461" text-anchor="middle" font-size="14" fill="#3B2447">LugaresRepositoryImpl</text>
+  <rect x="696" y="434" width="313" height="44" rx="8" fill="#FFFFFF" stroke="#684274"/>
+  <text x="852" y="461" text-anchor="middle" font-size="14" fill="#3B2447">PreferenciasRepositoryImpl</text>
+
+  <line x1="202" y1="492" x2="202" y2="524" stroke="#684274" stroke-width="2" marker-end="url(#flecha)"/>
+  <line x1="527" y1="492" x2="527" y2="524" stroke="#684274" stroke-width="2" marker-end="url(#flecha)"/>
+  <line x1="852" y1="492" x2="852" y2="524" stroke="#684274" stroke-width="2" marker-end="url(#flecha)"/>
+
+  <!-- Fuentes de datos -->
+  <rect x="30" y="528" width="980" height="110" rx="12" fill="#F1F0F4" stroke="#5B5B66" stroke-width="1.5"/>
+  <text x="46" y="550" font-size="14" font-weight="bold" fill="#3F3F4A">Fuentes de datos</text>
+  <rect x="46" y="562" width="233" height="60" rx="8" fill="#FFFFFF" stroke="#5B5B66"/>
+  <text x="162" y="586" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C36">Room (SQLite)</text>
+  <text x="162" y="606" text-anchor="middle" font-size="12" fill="#5B5B66">Favoritos · Lugares · Fotos</text>
+  <rect x="289" y="562" width="233" height="60" rx="8" fill="#FFFFFF" stroke="#5B5B66"/>
+  <text x="405" y="586" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C36">Retrofit + Gson</text>
+  <text x="405" y="606" text-anchor="middle" font-size="12" fill="#5B5B66">Fake Store API (joyería)</text>
+  <rect x="532" y="562" width="233" height="60" rx="8" fill="#FFFFFF" stroke="#5B5B66"/>
+  <text x="648" y="586" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C36">DataStore</text>
+  <text x="648" y="606" text-anchor="middle" font-size="12" fill="#5B5B66">Modo oscuro · Moneda</text>
+  <rect x="775" y="562" width="234" height="60" rx="8" fill="#FFFFFF" stroke="#5B5B66"/>
+  <text x="892" y="586" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C36">Hardware</text>
+  <text x="892" y="606" text-anchor="middle" font-size="12" fill="#5B5B66">GPS · Cámara (FileProvider)</text>
+
+  <text x="520" y="668" text-anchor="middle" font-size="13" fill="#5B5B66">El ViewModel nunca accede a Retrofit ni a los DAO de Room: siempre pasa por una interfaz de repositorio del dominio.</text>
+</svg>
